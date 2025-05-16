@@ -1,0 +1,9 @@
+[Unit]
+Description=Run test-monitor every minute
+
+[Timer]
+OnCalendar=*:0/1
+Persistent=true # Выполнение пропущенных задач
+
+[Install]
+WantedBy=timers.target
